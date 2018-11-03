@@ -106,6 +106,17 @@
 		margin: auto !important;
 	}
 
+	@media screen and (min-width: 768px){
+
+	}
+	@media screen and (min-width: 992px){
+
+	}
+	@media screen and (min-width: 1200px){
+
+	}
+
+
 	@media screen and (max-width: 576px){
 		h1{
 			width: 100% !important;
@@ -582,11 +593,15 @@
 				})
 			});
 
-			$(window).resize(function(){
-				if ($(window).width() <= 576){
-					
-				}	
-			});
+			/*$(window).resize(function(){
+				var pix;
+				if($(window).width()>576)
+					pix = 16/1299* $(window).width();
+				else
+					pix = 16;
+				console.log(pix)
+				$('html').css("font-size", pix+"px");
+			});*/
 
 			$('#image-row-container').mouseover(function(){
 				console.log($(window).width())
